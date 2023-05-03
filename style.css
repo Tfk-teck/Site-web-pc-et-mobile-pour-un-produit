@@ -1,0 +1,131 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: hsl(30, 38%, 92%);
+}
+
+h1, .prix1 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+img{
+        max-height: 70vh;
+        align-self: stretch;
+        margin: 0;
+        object-fit: cover;
+        border-radius: 1em 0 0 1em;
+}
+
+input {
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    background-image: url(images/icon-cart.svg);
+    background-position: 24%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin-bottom: 10%;
+}
+
+input.elem6 {
+    justify-self: center;
+    width: 80%;
+    border-radius: 10px;
+    
+}
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto ;
+    gap: 15px;
+    width: 46%;
+    background-color: white;
+    border-radius: 1em;
+
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.elem1{
+    align-self: flex-end;
+}
+
+.elem2{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+ }
+
+.elem3{
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.prix{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.prix1{
+    color: hsl(158, 36%, 37%);
+    
+}
+
+.prix2 {
+    font-weight: 500;
+    text-decoration: line-through;
+    grid-row: 5;
+    margin-top: 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen  and (max-width: 600px){
+    img{
+        margin-top: 0;
+        height: auto;
+        width: 400px;
+        order: -2;
+        border-radius: 1em 1em 0 0;
+    }
+    
+    .box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+        border-radius: 1em;
+        width: 400px;
+        height: auto;
+    }
+    
+    .flex{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .elem1 {
+        align-self: stretch;
+    }
+
+    .prix{
+        display: block;
+    }
+    input.elem6 {
+        align-self: center;
+        width: 50%;
+        margin-bottom: 6%;
+    }
+}
